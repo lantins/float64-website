@@ -1,0 +1,12 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore the middleman build directory
+/build
+
+# Ignore cache
+/.sass-cache
+/.cache
+
+# Prevent OS X litter
+.DS_Store

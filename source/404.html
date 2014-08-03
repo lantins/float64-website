@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>404 &middot; Page not found</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="author" href="humans.txt">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/404.css">
+</head>
+<body>
+
+  <div class="container limit-width">
+    <div class="overview">
+      <h1>Oh snapples!</h1>
+      <h2>Sorry, the page was not found.</h2>
+    </div>
+
+    <div class="fakehttp">
+      <pre id="http"></pre>
+    </div>
+
+    <script type="text/javascript">
+      var httpData = [
+        'GET ' + window.location.pathname + ' HTTP/1.1',
+        'Host: ' + window.location.host,
+        '',
+        'HTTP/1.1 404 Not Found'
+      ].join('\n');
+      document.getElementById('http').innerHTML = httpData;
+    </script>
+
+    <script type="text/javascript">
+      var GOOG_FIXURL_LANG = 'en';
+      var GOOG_FIXURL_SITE = 'http://www.float64.uk';
+    </script>
+    <script type="text/javascript" src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+  </div>
+  <nav class="nav-footer limit-width">
+    <ul>
+      <li><a href="/">About</a></li>
+      <li><a href="/hire">Hire me</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

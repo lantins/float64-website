@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title><%= current_page.data.title || "Luke Antins &middot; float64 &middot; Software Engineer &amp; Consultant, Cumbria, UK" %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="author" href="humans.txt">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600|Open+Sans:400italic,400,300" rel="stylesheet" type="text/css">
+  <%= stylesheet_link_tag 'float64' %>
+</head>
+<body>
+
+  <!--[if lt IE 7]>
+    <p class="outdatedbrowser">You are using an outdated browser :(<br><a href="http://browsehappy.com/">Upgrade your browser</a> for a better and safer internet experience.</p>
+  <![endif]-->
+
+  <%= partial 'navigation' %>
+
+  <!-- PAGE CONTENT: START -->
+  <%= yield %>
+  <!-- PAGE CONTENT: END -->
+
+  <footer class="layout l-box">
+    <div class="width-wrapper">
+      <span class="copy">&copy; 2014 Luke Antins. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <%= google_analytics_universal_tag %>
+
+</body>
+</html>
