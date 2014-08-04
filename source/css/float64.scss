@@ -11,7 +11,12 @@ body {
   min-height: 100%;
 }
 
-body {
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *= "pure-u"] {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -129,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
+.page-title h2,
 .intro h2 {
   font-size: 1.5em;
   font-weight: 300;

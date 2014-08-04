@@ -18,6 +18,10 @@
         [x] Disqus comments
         [ ] Display posts by tags?
     [ ] Google Analytics
+    [ ] Deployment
+        [ ] DNS
+        [ ] Nginx config
+        [ ] Email
 
 ## Notes
 
