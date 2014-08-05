@@ -4,122 +4,88 @@
   </div>
 </div>
 
-<div class="content content-no-border l-box">
-  <div class="pure-g width-wrapper">
-    <div class="pure-u-1-2">
-      <h2>1. Decide you want to hire me</h2>
+<div class="content content-no-border">
+  <div class="pure-g width-wrapper l-box">
+    <div class="pure-u-1 pure-u-md-1-2">
+
+      <h2>Learn about what I do</h2>
+
       <ul>
-        <li>Review the information on this website</li>
-        <li>Read about my experiences in <a href="">my resume</a></li>
-        <li>See my open source projects on GitHub</li>
+        <li>Get a gist from this website</li>
+        <li>Read my <a href="/cv">Curriculum Vitæ (CV)</a> for the full picture</li>
+        <li>
+          Check out my open source on
+          <a href="http://github.com/lantins">GitHub</a>
+          and
+          <a href="https://rubygems.org/profiles/lant">RubyGems</a>
+        </li>
       </ul>
-      <h2>2. Start discussing your project</h2>
+
+      <h2>Get in touch</h2>
       <p>
-        Lets start with the basics, please send me an email with:
+        Please
+        <%= mail_to 'luke@float64.uk', 'send me an email' %>
+        with some basic details:
       </p>
       <ul>
-        <li>A basic outline of your project</li>
-        <li>Timescales (if any)</li>
-        <li>A rough guide of your budget</li>
+        <li>Basic outline of your project</li>
+        <li>Timescales</li>
+        <li>Rough budget</li>
       </ul>
-    </div>
-    <div class="pure-u-1-2">
-      <h2>Skills</h2>
-
-      <h3>Programming Languages</h3>
-      <p>
-        Ruby,
-        PHP,
-        Objectie-C,
-        C89,
-        C++,
-        GoLang,
-        Bash
-      </p>
-      <h3>Web</h3>
-      <p>
-        HTML5,
-        CSS3,
-        Javascript,
-        jQuery,
-        CanJS,
-        Bootstrap,
-        PureCSS,
-        SASS/SCSS
-      </p>
-      <h3>Ruby Frameworks &amp; RubyGems</h3>
-      <p>
-        Ruby on Rails,
-        Sinatra,
-        Padrino,
-        Rack,
-        Grape,
-        Sequel,
-        EventMachine
-      </p>
-      <h3>SQL Databases</h3>
-      <p>
-        PostgreSQL,
-        MySQL,
-        SQLite
-      </p>
-      <h3>NoSQL Databases</h3>
-      <p>
-        LevelDB,
-        Redis,
-        Memcached,
-        InfluxDB
-      </p>
-      <h3>Operating Systems</h3>
-      <p>
-        OS X,
-        Ubuntu Linux,
-        CoreOS,
-        Slackware Linux,
-        OpenBSD,
-        Microsoft Windows (desktop and server)
-      </p>
-      <h3>Linux Server Software</h3>
-      <p>
-        Postfix,
-        Apache,
-        Nginx,
-        PHP-FPM,
-        Keepalived,
-        HAProxy,
-        Squid,
-        Bind,
-        NIS,
-        NFS,
-        DRDB
-      </p>
-
-      <h3>Scripting</h3>
-      <p>
-        Ansible,
-        NSIS (Nullsoft Scriptable Install System),
-        Bash,
-        GNU Make,
-        CMake
-      </p>
-
-      <h3>Notable Additions</h3>
-      Git
-      Creating RubyGems (including with native C or C++ extensions)
-      TDD (Test Driven Development)
-      Cross compiling C and C++ using CMake
-      Published iPhone game to Apple App Store (Objective-C and OpenGL)
-      Familiar with Apple MFi licensing program
-      Used Linux from age of 11 (when RHL 4.0 was released), quickly moved onto using NetBSD and OpenBSD
-      Physical servers (commissioning and maintanance)
-      ASCII and binary protocol design and implementation
-      Working with teams developing bespoke hardware solutions
-      Building multi-transport (TCP/IP, UDP and SMS) server software
-
 
     </div>
+    <div class="pure-u-md-1-2 hire-photo">
+      <img class="pure-img climbing-photo" src="https://lh3.googleusercontent.com/-C9vBN5WJMew/ShiFIIK2ZbI/AAAAAAAAEB0/eBZ0uhzSuH8/s720/IMG_0480.JPG">
+    </div>
+
   </div>
 </div>
 
 
-PXE network booted 50 servers running custom Linux distro, persistent storage provided by NFS running on top of a DRDB pair, system accounts managed using NIS, SNMP access to upstream providers routers to remove entries from ARP tables, allowing servies and IP addresses to be shifted between machines very quickly
+<div class="content content-grey">
+  <div class="width-wrapper l-box">
+    <h2>Skills</h2>
+    <p>
+      I've tinkered with plenty of languages, software and tools over the years, too many to list, but these are the main ones:
+    </p>
+
+    <div class="pure-g">
+      <% if !data.skills.blank? %>
+        <% data.skills.each do |key, skill|  %>
+          <%= partial(:skill_block, :locals => { :skill => skill }) %>    
+        <% end %>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+
+<div class="content">
+  <div class="width-wrapper l-box">
+    <h2>Examples of my experience</h2>
+    <ul>
+      <li>Creating RubyGems, some with native extensions, one with <a href="https://rubygems.org/gems/resque-retry"><strong>700,000+ downloads</strong></a></li>
+      <li>Cross compiled proprietary C and C++ code using CMake</li>
+      <li>Published an iPhone game to Apple App Store (Objective-C and OpenGL)</li>
+      <li>Familiar with Apple MFi licensing program</li>
+      <li>Worked with a team to developing bespoke vehicle telematics solutions for automotive OEMs</li>
+      <li>Designed and implemented ASCII and binary protocols and configuration file formats</li>
+      <li>Built multi-transport (TCP/IP, UDP and SMS) and multi-protocol server software</li>
+      <li>Used Linux and BSD from the age of 11, familiar with Slackware, Ubuntu and OpenBSD</li>
+      <li>Physical servers (commissioning, maintanance and decommissioning)</li>
+      <li>
+        Circa 2002 I created a <em>bespoke cluster</em> of PXE network booted servers:
+        <ul>
+          <li>At peak approx. 50 physical machines were used</li>
+          <li>Running a 30MB custom version of Slackware Linux</li>
+          <li>Storing user data on NFS shares, running on a DRBD failover pair</li>
+          <li>NIS and MySQL Cluster were used to store Linux system accounts and configuration</li>
+          <li>Removing ARP entries from routers allowed services and IP addresses to <em>float</em> or <em>failover</em> between servers</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<%= partial 'contact_callout' %>

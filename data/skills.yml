@@ -1,0 +1,82 @@
+programming:
+  title: Programming
+  items:
+    - Ruby
+    - PHP
+    - Objective-C
+    - C89
+    - C++
+    - GoLang
+    - Bash
+
+web:
+  title: Web
+  items:
+    - HTML5
+    - CSS3
+    - Javascript
+    - jQuery
+    - CanJS
+    - Bootstrap
+    - PureCSS
+    - SASS/SCSS
+
+ruby:
+  title: 'Ruby'
+  items:
+    - Sinatra
+    - Padrino
+    - Rack
+    - Grape
+    - Resque
+    - Sequel
+    - EventMachine
+    - Ruby on Rails
+
+databases:
+  title: Databases
+  items:
+    - PostgreSQL
+    - MySQL
+    - SQLite
+    - LevelDB
+    - Redis
+    - Memcached
+    - InfluxDB
+
+os:
+  title: Operating Systems
+  items:
+    - Slackware Linux
+    - Ubuntu Linux
+    - OpenBSD
+    - OS X
+    - Windows Desktop
+    - Windows Server
+
+linux:
+  title: Linux Software
+  items:
+    - Postfix
+    - Dovecot
+    - Apache
+    - Nginx
+    - Keepalived
+    - HAProxy
+    - Bind (DNS)
+    - DRBD
+
+build:
+  title: Build Scripts
+  items:
+    - NSIS (Nullsoft Scriptable Install System)
+    - GNU Make
+    - CMake
+
+misc:
+  title: Misc.
+  items:
+    - Ansible
+    - Git
+    - LaTeX
+    - Server hardware

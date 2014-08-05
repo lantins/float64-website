@@ -11,6 +11,8 @@
     [x] Initial layout
     [x] favicon.ico
     [x] 404 Not found page
+    [x] 'Hire me' page
+        [ ] Curriculum Vitae
     [ ] Blog:
         [x] Initial blog post
         [x] Single blog post display view and styles
