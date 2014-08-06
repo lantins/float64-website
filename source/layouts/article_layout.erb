@@ -6,6 +6,8 @@
         <%= current_article.date.strftime("%A #{current_article.date.day.ordinalize} %B, %Y") %>
         &middot;
         <%= link_to 'Comments', "#{current_article.url}#disqus_thread" %>
+        <br>
+        <%= tag_link_list(current_article) %>
       </div>
     </div>
   </div>
@@ -14,22 +16,10 @@
     <%= yield %>
   </article>
 
-  <section class="content article-footer l-box">
-    <div class="width-wrapper">
-      <a class="author-photo" href="http://twitter.com/mbleigh">
-        <img class="photo" src="/img/me-130.jpg" alt="Luke Antins" title="Luke Antins">
-      </a>
-      <h2>Luke Antins</h2>
-      <p>
-        I love crafting software, solving problems and climbing mountains.
-        I have a particular interest in vehicle telematics, web services
-        and distributed systems. I enjoy using a wide range of tools including
-        Linux, PostgreSQL, Postfix, Nginx, Ruby, Sinatra, Golang and PHP.
-      </p>
-    </div>
-  </section>
+  <%= partial 'author_bio' %>
 
   <div class="width-wrapper l-box">
     <%= disqus %>
+    <%= disqus_count %>
   </div>
 <% end %>

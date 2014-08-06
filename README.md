@@ -16,9 +16,9 @@
     [ ] Blog:
         [x] Initial blog post
         [x] Single blog post display view and styles
-        [ ] Blog post list (with pagination) view and styles
+        [x] Blog post list (with pagination) view and styles
         [x] Disqus comments
-        [ ] Display posts by tags?
+        [x] Display posts by tags
     [ ] Google Analytics
     [ ] Deployment
         [ ] DNS

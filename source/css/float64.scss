@@ -197,8 +197,6 @@ ul {
 
 .content-callout {
   text-align: center;
-  font-size: 1.2em;
-  font-weight: 300;
 }
 
 /* --- FOOTER --------------------------------------------------------------- */
@@ -235,10 +233,37 @@ footer.layout {
 .page-title-article a:active {
 }
 
-.article-footer {
+.article-listing {
+  margin-bottom: 1em;
+  padding: 0.0em 1em;
+}
+
+.article-listing .article-meta {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.article-listing h2 {
+  font-size: 2em;
+  margin: 0 0 0.2em;
+}
+
+.article-author-bio {
   background-color: $color_64;
   color: #ffffff;
   overflow: auto;
+}
+
+.article-author-bio a:link,
+.article-author-bio a:visited {
+  color: #ffffff;
+}
+
+.article-author-bio a:hover {
+  color: $color_float;
+}
+
+.article-author-bio a:active {
 }
 
 .author-photo {

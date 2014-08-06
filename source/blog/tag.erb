@@ -1,0 +1,25 @@
+<div class="page-title l-box">
+  <div class="width-wrapper">
+    <h1>Blog</h1>
+  </div>
+</div>
+
+<section class="content content-no-border l-box">
+  <div class="width-wrapper">
+
+    <h2>Posts tagged '<%= tagname %>'</h2>
+
+    <ul>
+      <% page_articles.each_with_index do |article, i| %>
+        <li>
+          <%= link_to article.title, article %><br>
+          <small><%= article.date.strftime("%A #{article.date.day.ordinalize} %B, %Y") %></small>
+        </li>
+      <% end %>
+    </ul>
+
+  </div>
+</section>
+
+<%= partial 'author_bio' %>
+

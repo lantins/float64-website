@@ -18,6 +18,7 @@ end
 activate :blog do |blog|
   blog.paginate = true
   blog.layout = 'article_layout'
+  blog.tag_template = 'blog/tag.html'
   
   blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
   blog.permalink = 'blog/{year}/{month}/{day}/{title}.html'
@@ -35,6 +36,16 @@ helpers do
   # Output a css class if the given regex matches
   def if_path(regex, classes = 'pure-menu-selected')
     regex =~ current_page.url ? classes : ''
+  end
+
+  # Output a 'list' of tag links
+  def tag_link_list(current_article)
+    tags = current_article.tags
+    links = tags.inject([]) do |result, tag|
+      result << "#{link_to(tag, tag_path(tag))}"
+    end
+
+    links.join(' &middot; ')
   end
 end
 
