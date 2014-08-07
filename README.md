@@ -3,8 +3,8 @@
 ## Development
 
 ```bash
-  # Run a 'live reloading' copy of the site for local development
-  bundle exec middleman
+# Run a 'live reloading' copy of the site for local development
+bundle exec middleman
 ```
 
 ## TODO
