@@ -2,7 +2,10 @@
 
 ## Development
 
-    bundle exec middleman
+```bash
+  # Run a 'live reloading' copy of the site for local development
+  bundle exec middleman
+```
 
 ## TODO
 
