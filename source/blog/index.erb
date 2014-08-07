@@ -12,19 +12,22 @@ per_page: 12
 <section class="content content-no-border l-box">
   <div class="width-wrapper">
 
-  <% page_articles.each_with_index do |article, i| %>
-    <article class="article-listing">
-      <h2><%= link_to article.title, article %></h2>
-      <div class="article-meta">
-        <strong>Posted: </strong><%= article.date.strftime("%A #{article.date.day.ordinalize} %B, %Y") %>
-        <br>
+    <ul class="article-listing">
+    <% page_articles.each_with_index do |article, i| %>
+      <li>
+        <span><%= format_date(article.date) %></span>
+        <%= link_to article.title, article %>
+        <!--
         <% unless article.tags.empty? %>
-          <strong>Tags: </strong>
-          <%= tag_link_list(article) %>          
+          <div class="tags">
+            TAGS &middot;
+            <%= tag_link_list(article) %>          
+          </div>
         <% end %>
-      </div>
-    </article>
-  <% end %>
+        -->
+      </li>
+    <% end %>
+    </ul>
 
   </div>
 </section>

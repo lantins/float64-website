@@ -3,11 +3,11 @@
     <div class="width-wrapper">
       <h1><%= current_article.title %></h1>
       <div class="article-meta">
-        <%= current_article.date.strftime("%A #{current_article.date.day.ordinalize} %B, %Y") %>
+        <%= format_date(current_article.date) %>
         &middot;
         <%= link_to 'Comments', "#{current_article.url}#disqus_thread" %>
         <br>
-        <%= tag_link_list(current_article) %>
+        Tags &middot; <%= tag_link_list(current_article) %>
       </div>
     </div>
   </div>

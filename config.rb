@@ -47,6 +47,11 @@ helpers do
 
     links.join(' &middot; ')
   end
+
+  # Format dates how I want them
+  def format_date(date)
+    date.strftime("%B #{date.day.ordinalize}, %Y")
+  end
 end
 
 # --- DEVELOPMENT AND BUILD SETTINGS -------------------------------------------

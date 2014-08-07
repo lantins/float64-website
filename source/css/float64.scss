@@ -129,7 +129,6 @@ ul {
 .page-title {
   background-color: #4F6370;
   color: #fff;
-  text-align: center;
 }
 
 .page-title h1 {
@@ -234,18 +233,38 @@ footer.layout {
 }
 
 .article-listing {
-  margin-bottom: 1em;
-  padding: 0.0em 1em;
+  padding-left: 0;
 }
 
-.article-listing .article-meta {
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #DDDDDD;
+.article-listing li {
+  list-style-type: none;
+  padding: 8px 4px;
+  border-bottom: 1px solid #EEE;
+  font-size: 1.5em;
 }
 
-.article-listing h2 {
-  font-size: 2em;
-  margin: 0 0 0.2em;
+.article-listing span,
+.article-listing div {
+  padding-top: 6px;
+  float: right;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.6em;
+}
+
+.article-listing div {
+  float: none;
+}
+
+.article-listing a:link,
+.article-listing a:visited {
+  color: #4E6371;
+}
+.article-listing a:hover {
+  color: $color_64;
+}
+
+.article-listing a:active {
 }
 
 .article-author-bio {
