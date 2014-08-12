@@ -86,3 +86,13 @@ after_build do
   system('htmlbeautifier build/*/*.html')
   system(%q{find build/ -name '*.html' -exec htmlbeautifier '{}' +})
 end
+
+# --- DEPLOYMENT ---------------------------------------------------------------
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method       = :rsync
+  deploy.host         = 'float64.uk'
+  deploy.path         = '/srv/vhost/float64.uk'
+  deploy.clean        = true
+end
