@@ -27,7 +27,7 @@ end
 # --- GOOGLE ANALYTICS ---------------------------------------------------------
 
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
+  ga.tracking_id = 'UA-53730825-1' # Replace with your property ID.
 end
 
 # --- TEMPLATE HELPER METHODS --------------------------------------------------
