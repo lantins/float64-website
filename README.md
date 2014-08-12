@@ -1,10 +1,13 @@
 # Luke Antins, float64 website and blog
 
-## Development
+## Cheat Sheet
 
 ```bash
 # Run a 'live reloading' copy of the site for local development
 bundle exec middleman
+
+# Deploy to server
+bundle exec middleman deploy
 ```
 
 ## TODO
@@ -16,17 +19,17 @@ bundle exec middleman
     [x] 404 Not found page
     [x] 'Hire me' page
         [ ] Curriculum Vitae
-    [ ] Blog:
+    [x] Blog:
         [x] Initial blog post
         [x] Single blog post display view and styles
         [x] Blog post list (with pagination) view and styles
         [x] Disqus comments
         [x] Display posts by tags
-    [ ] Google Analytics
-    [ ] Deployment
-        [ ] DNS
-        [ ] Nginx config
-        [ ] Email
+    [x] Google Analytics
+    [x] Deployment
+        [x] DNS
+        [x] Nginx config
+        [x] Email
 
 ## Notes
 
