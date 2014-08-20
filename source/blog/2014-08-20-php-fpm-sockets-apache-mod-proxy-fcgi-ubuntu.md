@@ -32,7 +32,7 @@ not work correctly, if at all.
 You may need to adjust application code or nginx config files to get things working,
 this becomes a problem when you have thousands of virtual hosts.
 
-If what I've just mentioned does not effect you, stop reading and go use nginx.
+If what I've just mentioned does not affect you, stop reading and go use nginx.
 
 ## Apache 2.4 and mod_proxy_fcgi
 
