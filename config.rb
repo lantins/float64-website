@@ -7,6 +7,8 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
 
+activate :syntax, :line_numbers => true
+
 # --- COMPASS SETTINGS ---------------------------------------------------------
 
 compass_config do |config|
