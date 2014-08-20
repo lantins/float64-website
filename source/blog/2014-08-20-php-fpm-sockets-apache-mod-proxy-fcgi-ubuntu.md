@@ -1,7 +1,7 @@
 ---
 title: PHP-FPM sockets with Apache 2.4 and mod_proxy_fcgi on Ubuntu 14.04 LTS
 date: 2014-08-20 06:00 UTC
-tags: ubuntu apache php howto
+tags: ubuntu, apache, php, howto
 ---
 
 [If you don't feel like reading skip to the instructions](#instructions).
