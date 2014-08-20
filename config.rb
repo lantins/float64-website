@@ -84,10 +84,10 @@ configure :build do
   # activate :relative_assets
 end
 
-after_build do
-  system('htmlbeautifier build/*/*.html')
-  system(%q{find build/ -name '*.html' -exec htmlbeautifier '{}' +})
-end
+#after_build do
+#  system('htmlbeautifier build/*/*.html')
+#  system(%q{find build/ -name '*.html' -exec htmlbeautifier '{}' +})
+#end
 
 # --- DEPLOYMENT ---------------------------------------------------------------
 
