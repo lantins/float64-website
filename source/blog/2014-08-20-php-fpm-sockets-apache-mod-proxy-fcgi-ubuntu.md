@@ -4,8 +4,6 @@ date: 2014-08-20 06:00 UTC
 tags: ubuntu apache php howto
 ---
 
-Running PHP-FPM with sockets under Apache 2.4 on Ubuntu 14.04 LTS
-
 [If you don't feel like reading skip to the instructions](#instructions).
 
 ## The status quo
