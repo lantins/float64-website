@@ -127,7 +127,7 @@ sudo a2enmod -m proxy_fcgi
 sudo a2enconf -m vhost-permissions.conf
 sudo a2ensite -m example
 
-# **n.b.** If you are testing your an IP address (and not a domain) you'll need
+# **n.b.** If your testing using an IP address (and not a domain) you need
 #          to disable the default apache virtual host, or better yet replace
 #          it with your own.
 sudo rm /etc/apache2/sites-enabled/000-default.conf
