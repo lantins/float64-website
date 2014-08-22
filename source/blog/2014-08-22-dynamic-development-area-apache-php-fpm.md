@@ -1,8 +1,7 @@
 ---
 title: Dynamic development area with Apache 2.4 and PHP-FPM
-date: 2014-08-22 01:00 UTC
+date: 2014-08-22 03:10 UTC
 tags: apache, php, howto
-published: false
 ---
 
 ## Introduction
