@@ -67,6 +67,42 @@ ul {
 .content a:active {
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid $color_float;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: $color_float;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+blockquote cite {
+  display: block;
+}
+
+blockquote cite a:link,
+blockquote cite a:visited {
+  text-decoration: none;
+  color: $color_64;
+}
+
+blockquote cite a:hover,
+blockquote cite a:active {
+  text-decoration: underline;
+}
+
 /* --- NAVIGATION ----------------------------------------------------------- */
 
 .navigation {
@@ -260,12 +296,12 @@ footer.layout {
 .article-listing a:link,
 .article-listing a:visited {
   color: #4E6371;
+  text-decoration: none;
 }
-.article-listing a:hover {
-  color: $color_64;
-}
-
+.article-listing a:hover,
 .article-listing a:active {
+  color: $color_64;
+  text-decoration: underline;
 }
 
 .article-author-bio {
