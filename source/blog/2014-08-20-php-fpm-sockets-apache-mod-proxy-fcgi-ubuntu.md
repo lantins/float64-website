@@ -35,7 +35,7 @@ If what I've just mentioned does not affect you, stop reading and go use nginx.
 ## Apache 2.4 and mod_proxy_fcgi
 
 Apache 2.4 and `mod_proxy_fcgi` has worked nicely with PHP-FPM using TCP/IP sockets
-for some time with just the stock apache httpd and php.net releases.
+for some time with just the stock Apache httpd and php.net releases.
 
 I'm pleased to see a couple of recent improvements:
 
@@ -60,7 +60,7 @@ You need **Apache 2.4.10** or newer, currently available from a
 The instructions below are all bundled together so you _can_ copy them
 into your text editor and replace occurrences of `example` and `example.com`
 with your own settings then paste into a terminal window. But I suggest you do it
-one step at a time to see whats going on.
+one step at a time to see what's going on.
 
 ~~~ bash
 # Install packages
