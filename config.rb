@@ -52,7 +52,7 @@ helpers do
 
   # Format dates how I want them
   def format_date(date)
-    date.strftime("%B #{date.day.ordinalize}, %Y")
+    date.strftime("%d %B %Y")
   end
 end
 
