@@ -2,6 +2,7 @@
 title: Dynamic development area with Apache 2.4 and PHP-FPM
 date: 2014-08-22 03:10 UTC
 tags: apache, php, howto
+description: Guide to setting up a dynamic development area using Apache mod_vhost_alias and PHP-FPM.
 ---
 
 ## Introduction

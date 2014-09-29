@@ -2,6 +2,7 @@
 title: Hello world
 date: 2014-08-02 08:00 UTC
 tags: blogging
+description: My first blog post on float64.uk
 ---
 
 Hello, my name is Luke.
