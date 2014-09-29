@@ -34,6 +34,7 @@ end
 
 # --- SITEMAPS -----------------------------------------------------------------
 
+set :url_root, 'http://float64.uk'
 activate :search_engine_sitemap
 
 # --- TEMPLATE HELPER METHODS --------------------------------------------------
