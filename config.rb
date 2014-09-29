@@ -32,6 +32,10 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-53730825-1' # Replace with your property ID.
 end
 
+# --- SITEMAPS -----------------------------------------------------------------
+
+activate :search_engine_sitemap
+
 # --- TEMPLATE HELPER METHODS --------------------------------------------------
 
 helpers do
