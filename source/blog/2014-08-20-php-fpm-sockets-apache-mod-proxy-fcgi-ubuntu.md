@@ -16,7 +16,7 @@ crashing down!
 If you have ever been bitten by this you likely locked down your
 `php.ini` and Apache configs *(and you always should)*. You have possibly played
 around with [suphp][suphp], [mod_suexec][mod_suexec] or [mod_fastcgi][mod_fastcgi],
-but this always seems messy needing .
+but this always seems messy!
 
 ## Why not use nginx?
 
