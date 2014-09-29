@@ -352,11 +352,11 @@ footer.layout {
 /* --- MEDIA QUERIES -------------------------------------------------------- */
 
 /* Very small devices (568px and up) */
-@media (min-width: 35.5em) {
+@media screen and (min-width: 35.5em) {
 }
 
 /* Small devices (768px and up) */
-@media (min-width: 48em) {
+@media screen and (min-width: 48em) {
   .hire-photo {
     display: block;
   }
@@ -375,7 +375,7 @@ footer.layout {
 }
 
 /* Medium devices (992px and up) */
-@media (min-width: 62em) {
+@media screen and (min-width: 62em) {
   .width-wrapper {
     width: 928px;
     margin: 0 auto;
@@ -384,7 +384,7 @@ footer.layout {
 }
 
 /* Large devices (1200px and up) */
-@media (min-width: 75em) {
+@media screen and (min-width: 75em) {
 
 }
 
