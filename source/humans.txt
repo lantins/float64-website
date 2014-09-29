@@ -9,7 +9,6 @@
 		
 /* SITE */
 
-	Last update:2014/07/30
 	Language: English
 	Doctype: HTML5
 
