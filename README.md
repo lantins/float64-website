@@ -18,7 +18,7 @@ bundle exec middleman deploy
     [x] favicon.ico
     [x] 404 Not found page
     [x] 'Hire me' page
-        [ ] Curriculum Vitae
+        [ ] Curriculum Vitae - suitable for printing
     [x] Blog:
         [x] Initial blog post
         [x] Single blog post display view and styles

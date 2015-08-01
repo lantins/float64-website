@@ -26,7 +26,7 @@ change_frequency: monthly
       <h2>Learn about what I do</h2>
 
       <ul>
-        <li>Get a gist by looking around my <em>float64.uk</em> website</li>
+        <li>Read about my experience and skills further down</li>
 <!--
         <li>Read my <a href="/cv">Curriculum Vitæ (CV)</a> for the full picture</li>
 -->
@@ -42,12 +42,11 @@ change_frequency: monthly
       <p>
         Please
         <%= mail_to 'luke@float64.uk', 'send me an email' %>
-        with some basic details:
+        with some quick details:
       </p>
       <ul>
-        <li>Basic outline of your project</li>
+        <li>Outline of your project or needs</li>
         <li>Any timescales to consider</li>
-        <li>Where you think I can help</li>
       </ul>
 
     </div>
@@ -58,35 +57,16 @@ change_frequency: monthly
   </div>
 </div>
 
-
 <div class="content content-grey">
-  <div class="width-wrapper l-box">
-    <h2>Skills</h2>
-    <p>
-      I've tinkered with plenty of languages, software and tools over the years, too many to list, but these are the main ones:
-    </p>
-
-    <div class="pure-g">
-      <% if !data.skills.blank? %>
-        <% data.skills.each do |key, skill|  %>
-          <%= partial(:skill_block, :locals => { :skill => skill }) %>    
-        <% end %>
-      <% end %>
-    </div>
-
-  </div>
-</div>
-
-<div class="content">
   <div class="width-wrapper l-box">
     <h2>Examples of my experience</h2>
     <ul>
-      <li>Creating RubyGems, some with native extensions, one with <a href="https://rubygems.org/gems/resque-retry"><strong>700,000+ downloads</strong></a></li>
+      <li>Creating RubyGems, some with native extensions, one with <a href="https://rubygems.org/gems/resque-retry"><strong>1,328,000+ downloads</strong></a></li>
       <li>Cross compiled proprietary C and C++ code using CMake</li>
       <li>Published an <a href="https://itunes.apple.com/us/app/spectra/id563776938?ls=1&amp;mt=8">iPhone game</a> to Apple App Store (Objective-C and OpenGL)</li>
       <li>Familiar with Apple MFi licensing program</li>
       <li>Worked with a team to developing bespoke vehicle telematics solutions for automotive OEMs</li>
-      <li>Designed and implemented ASCII and binary protocols and configuration file formats</li>
+      <li>Designed and implemented ASCII/binary network protocols and file formats</li>
       <li>Built multi-transport (TCP/IP, UDP and SMS) and multi-protocol server software</li>
       <li>Used Linux and BSD from the age of 11, familiar with Slackware, Ubuntu and OpenBSD</li>
       <li>Physical servers (commissioning, maintenance and decommissioning)</li>
@@ -102,6 +82,24 @@ change_frequency: monthly
         </ul>
       </li>
     </ul>
+
+  </div>
+</div>
+
+<div class="content">
+  <div class="width-wrapper l-box">
+    <h2>Skills</h2>
+    <p>
+      I've tinkered with plenty of languages, software and tools over the years, too many to list, but these are the main ones:
+    </p>
+
+    <div class="pure-g">
+      <% if !data.skills.blank? %>
+        <% data.skills.each do |key, skill|  %>
+          <%= partial(:skill_block, :locals => { :skill => skill }) %>    
+        <% end %>
+      <% end %>
+    </div>
 
   </div>
 </div>

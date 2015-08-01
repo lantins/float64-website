@@ -1,12 +1,12 @@
 programming:
   title: Programming
   items:
+    - Go
     - Ruby
     - PHP
     - Objective-C
     - C89
     - C++
-    - GoLang
     - Bash
 
 web:
@@ -47,8 +47,9 @@ databases:
 os:
   title: Operating Systems
   items:
-    - Slackware Linux
     - Ubuntu Linux
+    - Buildroot Embedded Linux
+    - Slackware Linux
     - OpenBSD
     - OS X
     - Windows Desktop
@@ -77,6 +78,8 @@ misc:
   title: Misc.
   items:
     - Ansible
+    - Vagrant
     - Git
     - LaTeX
     - Server hardware
+    - Hobby electrical engineering
