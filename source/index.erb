@@ -1,78 +1,100 @@
 ---
-description: Luke Antins is a freelance full stack software developer, working at all levels of an application, working with Ruby, GoLang, PHP.
+description: Luke Antins &middot; Freelance software engineer &amp; consultant based in the North West of England.
 priority: 0.9
 change_frequency: monthly
 ---
 <section class="intro l-box">
   <div class="width-wrapper">
-    <h1 class="hello">Hello!</h1>
+    <h1 class="hello">Hello, I'm Luke Antins</h1>
     <h1>
-      I'm Luke Antins<br>
-      I solve problems, build software &amp; climb mountains
+      I deliver solutions to help your business do great things
     </h1>
     <h2>
-      I am an independent software engineer &amp; consultant based in Cumbria, UK
+      Luke is a freelance software engineer &amp; consultant based in the North West of England
     </h2>
   </div>
 </section>
 
-<section class="content content-no-border l-box">
-  <div class="width-wrapper">
-    <h2>Full stack developer</h2>
+<div class="content content-no-border">
+  <div class="pure-g width-wrapper l-box">
+    <div class="pure-u-1 pure-u-md-1-2">
 
-    <p>
-      I’ve worked at all levels of an application including the end user experience,
-      backend business logic, sysadmin and operations, designing interfaces and
-      protocols between components and integration with external systems.
-    </p>
+      <h2>How can I help you?</h2>
+      <p>
+        To understand what I can offer your business take a look at my <a href="/services"><strong>services page</strong></a>.
+      </p>
 
-    <p>
-      I am experienced with the whole development lifecycle including
-      initial concept and requirements gathering, research and prototyping,
-      guiding the overall development effort undertaken by a team
-      and commissioning solutions within customer premises on the opposite side of
-      the world.
-    </p>
+      <h2>Technical details</h2>
+      <p>
+        If you'r a technically minded you should check out <a href="/blog">my blog</a> and open source contributions on
+        <a href="http://github.com/lantins">GitHub</a>
+        and
+        <a href="https://rubygems.org/profiles/lant">RubyGems</a>
+      </p>
+      <p>
+        Further down this page I've included some examples of my experiance and the primary technologies I work with.
+      </p>
+      <p>
+        If you have any questions at all, <a href="/contact">get in touch</a>.
+      </p>
 
-    <p>
-      My wide spectrum of experience allows me to take the initiative in finding
-      solutions to your problems and delivering value.
-    </p>
+    </div>
+    <div class="pure-u-md-1-2 hire-photo">
+      <figure>
+        <img class="pure-img climbing-photo" src="/img/me-climbing.jpg" alt="Luke Antins climbing Bowderstone Pinnacle">
+        <figcaption>(Luke climbing in the Borrowdale Valley)</figcaption>
+      </figure>
+    </div>
 
   </div>
-</section>
-
-<section class="content content-grey l-box">
-  <div class="width-wrapper">
-    <h2>Adaptable</h2>
-    <p>
-      I have worked within a multitude of industrial sectors such as
-      automotive, tourism and trade. I thrive on solving problems and have the
-      ability to adapt my skills to the problem at hand.
-    </p>
-    <p>
-      I won't claim to always have the answer, I understand my own limitations
-      and will seek assistance and guidance from colleagues and friends
-      in these situations to help you find a relevant solution.
-    </p>
-    <p>
-      I am always eager to learn how things work and expand my knowledge,
-      especially through collaboration and discussion.
-    </p>
-  </div>
-</section>
-
-<section class="content l-box">
-  <div class="width-wrapper">
-    <h2>Finding solutions</h2>
-    <ul>
-      <li>I view people and communication as pivotal.</li>
-      <li>I strive to find the simplest possible solution.</li>
-      <li>I craft quality, maintainable and well tested software.</li>
-      <li>I unravel large problems into small, understandable pieces.</li>
-      <li>I believe complex systems should be built through composition of small components.</li>
-    </ul>
-  </div>
-</section>
+</div>
 
 <%= partial 'callout_contact' %>
+
+<div class="content content-grey">
+  <div class="width-wrapper l-box">
+    <h2>Technical examples of my experience</h2>
+    <ul>
+      <li>Single handedly created a prototype embedded Linux, CAN-bus data logger (hardware and software)</li>
+      <li>Creating RubyGems, some with native extensions, one with <a href="https://rubygems.org/gems/resque-retry"><strong>1,544,070+ downloads</strong></a></li>
+      <li>Cross compiled proprietary C and C++ code using CMake</li>
+      <li>Published an <a href="https://itunes.apple.com/us/app/spectra/id563776938?ls=1&amp;mt=8">iPhone game</a> to Apple App Store (Objective-C and OpenGL)</li>
+      <li>Familiar with Apple MFi licensing program</li>
+      <li>Worked with a team to developing bespoke vehicle telematics solutions for automotive OEMs</li>
+      <li>Designed and implemented ASCII/binary network protocols and file formats</li>
+      <li>Built multi-transport (TCP/IP, UDP and SMS) and multi-protocol server software</li>
+      <li>Used Linux and BSD from the age of 11, familiar with Slackware, Ubuntu and OpenBSD</li>
+      <li>Linux servers physical and virtual (commissioning, maintenance and decommissioning)</li>
+      <li>Maintained an open source mirror server for approx. 6 years</li>
+      <li>
+        Circa 2002 I created a <em>bespoke cluster</em> of PXE network booted servers:
+        <ul>
+          <li>50 physical machines</li>
+          <li>Running a 30MB custom version of Slackware Linux</li>
+          <li>Storing user data on NFS shares, running on a DRBD failover pair</li>
+          <li>NIS and MySQL Cluster were used to store Linux system accounts and configuration</li>
+          <li>Removing ARP entries from routers allowed services and IP addresses to <em>float</em> or <em>failover</em> between servers</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="content">
+  <div class="width-wrapper l-box">
+    <h2>Skills</h2>
+    <p>
+      I've tinkered with plenty of languages, software and tools over the years, too many to list, but these are the main ones:
+    </p>
+
+    <div class="pure-g">
+      <% if !data.skills.blank? %>
+        <% data.skills.each do |key, skill|  %>
+          <%= partial(:skill_block, :locals => { :skill => skill }) %>    
+        <% end %>
+      <% end %>
+    </div>
+
+  </div>
+</div>

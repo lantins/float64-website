@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1em;
 }
 
+.l-box.l-box-md-beside {
+  padding-left: 1em;
+}
+
 .hline-float {
   border-top: 5px solid $color_float;
 }
@@ -101,6 +105,11 @@ blockquote cite a:visited {
 blockquote cite a:hover,
 blockquote cite a:active {
   text-decoration: underline;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
 }
 
 /* --- NAVIGATION ----------------------------------------------------------- */
@@ -183,14 +192,14 @@ blockquote cite a:active {
 
 .intro h1 {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 8px 0 16px;
   text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .page-title h2,
 .intro h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 300;
   margin: 8px 0;
   color: #ccc;
@@ -379,6 +388,10 @@ footer.layout {
   .width-wrapper {
     width: 928px;
     margin: 0 auto;
+  }
+
+  .l-box.l-box-md-beside {
+    padding-left: 0;
   }
 
 }
