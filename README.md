@@ -10,7 +10,7 @@ bundle exec middleman
 bundle exec middleman deploy
 ```
 
-## TODO - Rejig
+## TODO
 
     [ ] Add contact form.
 
