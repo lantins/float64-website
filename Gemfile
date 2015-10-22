@@ -8,7 +8,6 @@ gem 'middleman-disqus', '~>1.0.0'
 gem 'middleman-google-analytics', '~>1.0.2'
 gem 'middleman-search_engine_sitemap'
 gem 'middleman-deploy', '~>0.2.4'
-gem 'middleman-alias', '~>0.0.15'
 
 gem 'nokogiri', '~>1.6.1'
 

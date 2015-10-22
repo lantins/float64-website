@@ -14,6 +14,10 @@ bundle exec middleman deploy
 
     [ ] Add contact form.
 
+## Nginx Redirects
+
+    rewrite ^/hire(.*)$ $scheme://float64.uk/services/ permanent;
+
 ## Notes
 
   - fontello.com used to pull out required icons from fontawesome.io
