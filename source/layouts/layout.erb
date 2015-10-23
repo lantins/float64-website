@@ -9,6 +9,9 @@
   <title><%= yield_content(:title) || current_page.data.title || "Luke Antins &middot; Software Engineer &amp; Consultant" %></title>
   <meta name="description" content="<%= current_page.data.description || "" %>">
   <meta name="keywords" content="<%= current_page.data.keywords || "" %>">
+  <% if current_page.data.canonical? %>
+  <link rel="canonical" href="<%= current_page.data.canonical %>">
+  <% end %>
   <meta name="viewport" content="width=device-width">
   <link rel="author" href="humans.txt">
   <meta name="google-site-verification" content="ovOJ2WMJiEIDo-XraFm4dEK1qh_GmHdbpl2hAB3FXrU">

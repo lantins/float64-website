@@ -4,6 +4,7 @@ date: 2014-08-02 08:00 UTC
 tags: blogging
 keywords: introduction, hello
 description: My first blog post on float64.uk
+canonical: http://float64.uk/blog/2014/08/02/hello-world/
 ---
 
 Hello, my name is Luke.
