@@ -401,6 +401,21 @@ footer.layout {
 
 }
 
+/* --- PRINT STYLES --------------------------------------------------------- */
+
+@media print {
+  .navigation ul li,
+  .navigation .social-nav,
+  #disqus_thread {
+    display: none;
+  }
+
+  .page-title h1 {
+    font-size: 2em;
+  }
+
+}
+
 /* --- SOCIAL ICON FONTS (FONTAWESOME.IO USING FONTELLO.COM) ---------------- */
 @font-face {
   font-family: 'sicon';
