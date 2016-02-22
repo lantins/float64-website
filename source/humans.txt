@@ -1,7 +1,7 @@
 /* TEAM */
 
 	Developer: Luke Antins
-	Site: http://www.float64.uk
+	Site: https://www.float64.uk
 	Twitter: @lantins
 	Location: Cumbria, United Kingdom
 

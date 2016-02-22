@@ -4,7 +4,7 @@ date: 2014-08-22 03:10 UTC
 tags: apache, php, howto
 keywords: ubuntu, apache, php, howto, mod_proxy_fcgi, php-fpm, tutorial
 description: Guide to setting up a dynamic development area using Apache mod_vhost_alias and PHP-FPM.
-canonical: http://float64.uk/blog/2014/08/22/dynamic-development-area-apache-php-fpm/
+canonical: https://float64.uk/blog/2014/08/22/dynamic-development-area-apache-php-fpm/
 ---
 
 ## Introduction

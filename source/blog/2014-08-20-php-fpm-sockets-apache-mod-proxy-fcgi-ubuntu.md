@@ -4,7 +4,7 @@ date: 2014-08-20 06:00 UTC
 tags: ubuntu, apache, php, howto
 keywords: ubuntu, apache, php, howto, mod_proxy_fcgi, php-fpm, tutorial
 description: Guide to setup PHP-FPM unix socket pools with Apache 2.4 and mod_proxy_fcgi on Ubuntu 14.04 LTS
-canonical: http://float64.uk/blog/2014/08/20/php-fpm-sockets-apache-mod-proxy-fcgi-ubuntu/
+canonical: https://float64.uk/blog/2014/08/20/php-fpm-sockets-apache-mod-proxy-fcgi-ubuntu/
 ---
 
 [If you don't feel like reading skip to the instructions](#instructions).
@@ -42,8 +42,8 @@ for some time with just the stock Apache httpd and php.net releases.
 
 I'm pleased to see a couple of recent improvements:
 
-- Apache 2.4.9 (March 2014) [mod_proxy_fcgi: Support unix domain sockets as backend server endpoint.](http://httpd.apache.org/docs/current/mod/mod_proxy.html#proxypass)
-- Apache 2.4.10 (July 2014) [mod_proxy: Allow reverse-proxy to be set via explicit handler.](http://httpd.apache.org/docs/current/mod/mod_proxy.html#handler)
+- Apache 2.4.9 (March 2014) [mod_proxy_fcgi: Support unix domain sockets as backend server endpoint.](https://httpd.apache.org/docs/current/mod/mod_proxy.html#proxypass)
+- Apache 2.4.10 (July 2014) [mod_proxy: Allow reverse-proxy to be set via explicit handler.](https://httpd.apache.org/docs/current/mod/mod_proxy.html#handler)
 
 I personally don't like things listening on the network (local or not) unless it
 needs to, unix socket support was a big win for me.
