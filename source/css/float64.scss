@@ -172,6 +172,7 @@ figcaption {
 .social-nav .sicon-twitter-squared { color: #50ABF1 !important; }
 
 /* --- HEADLINE ------------------------------------------------------------- */
+
 .page-title {
   background-color: #4F6370;
   color: #fff;
@@ -242,6 +243,16 @@ figcaption {
 
 .content-callout {
   text-align: center;
+}
+
+/* --- CODE HIGHLIGHT ------------------------------------------------------- */
+
+.highlight {
+  overflow: scroll;
+}
+
+.highlight pre {
+  white-space: pre;
 }
 
 /* --- FOOTER --------------------------------------------------------------- */
@@ -417,6 +428,7 @@ footer.layout {
 }
 
 /* --- SOCIAL ICON FONTS (FONTAWESOME.IO USING FONTELLO.COM) ---------------- */
+
 @font-face {
   font-family: 'sicon';
   src: url('../font/sicon.eot?42352281');
